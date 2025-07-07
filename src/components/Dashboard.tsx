@@ -17,7 +17,7 @@ const Dashboard: React.FC = () => {
   return (
     <div className="dashboard-background">
       <div className="dashboard-card">
-        <h1 className="dashboard-title">Bienvenido, {userEmail} 👋</h1>
+        <h1 className="dashboard-title">Bienvenido, {userEmail} </h1>
         <p className="dashboard-subtitle">Tu token es:</p>
         <textarea
           value={token}
