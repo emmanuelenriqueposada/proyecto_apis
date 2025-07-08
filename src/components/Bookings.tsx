@@ -4,7 +4,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import type { DateClickArg } from '@fullcalendar/interaction';
 import Navbar_2 from './Navbar_2';
-import '../assets/FullCalendar.css'; // Asegúrate de tener este archivo con los estilos
+import '../assets/FullCalendar.css';
 
 interface Booking {
     id: number;
@@ -108,7 +108,7 @@ const Bookings: React.FC = () => {
                                                     padding: '1rem',
                                                     marginBottom: '1rem',
                                                     boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-                                                    color: '#000', // ✅ Todo el texto en negro
+                                                    color: '#000', 
                                                 }}
                                             >
                                                 <strong>Guest:</strong> {b.user} <br />
@@ -121,7 +121,7 @@ const Bookings: React.FC = () => {
                                                 <strong>Status:</strong>{' '}
                                                 <span
                                                     style={{
-                                                        color: '#000', // ✅ También el estado en negro
+                                                        color: '#000', 
                                                         fontWeight: 'bold',
                                                     }}
                                                 >

@@ -6,8 +6,8 @@ interface LoginFormProps {
 }
 
 const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
-  const [email, setEmail] = useState('dicki.alexa@example.org'); // 👈 Valor predeterminado
-  const [password, setPassword] = useState('$2y$12$uYSt7J5Zwqho9cUpTkWCW.I4OVojaUjwxHMBZs4DBc48xvH.6Rnxa'); // 👈 Valor predeterminado
+  const [email, setEmail] = useState('dicki.alexa@example.org'); 
+  const [password, setPassword] = useState('$2y$12$uYSt7J5Zwqho9cUpTkWCW.I4OVojaUjwxHMBZs4DBc48xvH.6Rnxa');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

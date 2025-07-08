@@ -1,4 +1,4 @@
-// src/components/Accommodations.tsx
+
 import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar_1';
 import '../assets/Accommodations.css';
@@ -30,7 +30,7 @@ const Accommodations: React.FC = () => {
       })
       .then((data) => {
         console.log('Respuesta de la API:', data);
-        // Ajusta según la estructura real
+        
         const accommodationsList = Array.isArray(data) ? data : data.data || [];
         setAccommodations(accommodationsList);
         setLoading(false);
