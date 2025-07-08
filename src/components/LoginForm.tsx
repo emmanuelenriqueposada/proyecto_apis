@@ -17,9 +17,9 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
   return (
     <div className="login-container">
       <form onSubmit={handleSubmit} className="login-form">
-        <h2 className="login-title">Iniciar Sesión</h2>
+        <h2 className="login-title">Log in</h2>
 
-        <label className="login-label">Correo electrónico</label>
+        <label className="login-label">Mail</label>
         <input
           type="email"
           value={email}
@@ -28,7 +28,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
           className="login-input"
         />
 
-        <label className="login-label">Contraseña</label>
+        <label className="login-label">Password</label>
         <input
           type="password"
           value={password}
@@ -38,7 +38,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
         />
 
         <button type="submit" className="login-button">
-          Iniciar Sesión
+          Sign in
         </button>
       </form>
     </div>

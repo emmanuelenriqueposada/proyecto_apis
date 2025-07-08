@@ -44,7 +44,7 @@ const Accommodations: React.FC = () => {
     <div>
       <Navbar />
       <div className="accommodations-container">
-        <h2>Lista de Alojamiento</h2>
+        <h2>Lista de Todos los Alojamiento</h2>
         {loading ? (
           <p>Cargando alojamientos...</p>
         ) : Array.isArray(accommodations) && accommodations.length > 0 ? (

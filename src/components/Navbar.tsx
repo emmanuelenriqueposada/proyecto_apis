@@ -16,9 +16,9 @@ const Navbar: React.FC = () => {
     <nav className="navbar">
       <span className="navbar-brand">Dashboard</span>
       <div className="navbar-links">
-        <Link to="/dashboard">Inicio</Link>
-        <Link to="/accommodations">Ver Alojamiento</Link>
-        <button onClick={handleLogout}>Cerrar Sesión</button>
+        <Link to="/dashboard">Home Page</Link>
+        <Link to="/accommodations">Get all accomodations</Link>
+        <button onClick={handleLogout}>Sign Out</button>
       </div>
     </nav>
   );

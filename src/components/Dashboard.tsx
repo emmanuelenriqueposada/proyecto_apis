@@ -19,14 +19,14 @@ const Dashboard: React.FC = () => {
       <nav className="navbar">
         <span className="navbar-brand">Dashboard</span>
         <div className="navbar-links">
-          <Link to="/accommodations">Ver Alojamiento</Link>
-          <button onClick={handleLogout}>Cerrar Sesión</button>
+          <Link to="/accommodations">Get all accomodations</Link>
+          <button onClick={handleLogout}>Sign Out</button>
         </div>
       </nav>
 
       <div className="dashboard-card">
-        <h1 className="dashboard-title">Bienvenido, {userEmail}</h1>
-        <p className="dashboard-subtitle">Tu token es:</p>
+        <h1 className="dashboard-title">Welcome, {userEmail}</h1>
+        <p className="dashboard-subtitle">Your token:</p>
         <textarea
           value={token}
           readOnly
