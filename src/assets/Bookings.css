@@ -1,10 +1,11 @@
+/* src/assets/Booking.css */
+
+/* Fechas reservadas (si usas react-calendar) */
 .booked-date {
     background-color: #d9534f !important;
     color: white !important;
     border-radius: 50%;
 }
-
-/* src/assets/Booking.css */
 
 /* Contenedor general */
 .accommodations-container {
@@ -19,7 +20,7 @@
     margin-bottom: 1.5rem;
 }
 
-/* Estilo del calendario */
+/* Calendario */
 .fc {
     background-color: #fff;
     border-radius: 8px;
@@ -56,4 +57,30 @@
     font-size: 0.85rem;
     padding: 2px 4px;
     border-radius: 4px;
+}
+
+/* ✅ Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .accommodations-container {
+        padding: 1rem;
+    }
+
+    .fc .fc-toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .fc .fc-toolbar-title {
+        font-size: 1.2rem;
+    }
+
+    .fc-button {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .fc-event {
+        font-size: 0.75rem;
+    }
 }
