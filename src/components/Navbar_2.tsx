@@ -1,9 +1,9 @@
-// src/components/Navbar.tsx
+// src/components/Navbar_2.tsx
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import '../assets/Navbar.css';
+import '../assets/Navbar_1.css';
 
-const Navbar: React.FC = () => {
+const Navbar_2: React.FC = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -14,14 +14,14 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="navbar">
-      <span className="navbar-brand">Dashboard</span>
+      <span className="navbar-brand">Bookings</span>
       <div className="navbar-links">
         <Link to="/dashboard">Home Page</Link>
-        <Link to="/accommodations">Get all accomodations</Link>
-        <button onClick={handleLogout}>Sign Out</button>
+        <Link to="/bookings">View Bookings</Link>
+        <button onClick={handleLogout}>Logout</button>
       </div>
     </nav>
   );
 };
 
-export default Navbar;
+export default Navbar_2;

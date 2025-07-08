@@ -1,7 +1,7 @@
 /* src/assets/Accommodations.css */
 .accommodations-container {
   padding: 2rem;
-  background-color: #4e4848;
+  background-color: #3d3c3c;
   min-height: 100vh;
 }
 
@@ -11,9 +11,11 @@
 }
 
 .accommodation-card {
-  border: 1px solid #ecdcdc;
+  border: 1px solid #0a0909;
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 8px;
-  background-color: #0c0202;
+  background-color: #1c415f;
+  line-height: 1.6;
 }
+

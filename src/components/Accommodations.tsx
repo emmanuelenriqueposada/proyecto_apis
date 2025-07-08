@@ -1,12 +1,12 @@
 // src/components/Accommodations.tsx
 import React, { useEffect, useState } from 'react';
-import Navbar from './Navbar';
+import Navbar from './Navbar_1';
 import '../assets/Accommodations.css';
 
 interface Accommodation {
-  id: string;
+  id: number;
   name: string;
-  location: string;
+  address: string;
   description: string;
 }
 
@@ -30,8 +30,9 @@ const Accommodations: React.FC = () => {
       })
       .then((data) => {
         console.log('Respuesta de la API:', data);
-        // Ajusta esta línea según la estructura real de la respuesta
-        setAccommodations(Array.isArray(data) ? data : data.data || []);
+        // Ajusta según la estructura real
+        const accommodationsList = Array.isArray(data) ? data : data.data || [];
+        setAccommodations(accommodationsList);
         setLoading(false);
       })
       .catch((err) => {
@@ -44,21 +45,22 @@ const Accommodations: React.FC = () => {
     <div>
       <Navbar />
       <div className="accommodations-container">
-        <h2>Lista de Todos los Alojamiento</h2>
+        <h2>List of All Accommodations</h2>
         {loading ? (
-          <p>Cargando alojamientos...</p>
+          <p>Loading accommodations...</p>
         ) : Array.isArray(accommodations) && accommodations.length > 0 ? (
           <ul className="accommodations-list">
             {accommodations.map((acc) => (
               <li key={acc.id} className="accommodation-card">
-                <h3>{acc.name}</h3>
-                <p><strong>Ubicación:</strong> {acc.location}</p>
-                <p>{acc.description}</p>
+                <p><strong>ID:</strong> {acc.id}</p>
+                <p><strong>Name:</strong> {acc.name || 'Not specified'}</p>
+                <p><strong>Address:</strong> {acc.address || 'Not specified'}</p>
+                <p><strong>Description:</strong> {acc.description || 'Not specified'}</p>
               </li>
             ))}
           </ul>
         ) : (
-          <p>No se encontraron alojamientos.</p>
+          <p>No accommodations found.</p>
         )}
       </div>
     </div>

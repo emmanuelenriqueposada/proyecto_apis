@@ -5,6 +5,10 @@ import Dashboard from './components/Dashboard';
 import Accommodations from './components/Accommodations';
 import ProtectedRoute from './components/ProtectedRoute';
 import { useLogin } from './hooks/useLogin';
+import FindAccommodationByID from './components/Find_a_accommodation_by_ID';
+import UpdateAccommodation from './components/Update_an_existing_accomodation';
+import StoreNewAccommodation from './components/Store_a_new_accomodation';
+import Bookings from './components/Bookings';
 
 function App() {
   const { login } = useLogin();
@@ -16,6 +20,10 @@ function App() {
         <Route element={<ProtectedRoute />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/accommodations" element={<Accommodations />} />
+          <Route path="/find-accommodation" element={<FindAccommodationByID />} />
+          <Route path="/update-accommodation" element={<UpdateAccommodation />} />
+          <Route path="/store-accommodation" element={<StoreNewAccommodation />} />
+          <Route path="/bookings" element={<Bookings />} />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

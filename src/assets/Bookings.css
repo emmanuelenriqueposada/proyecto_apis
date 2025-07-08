@@ -1,0 +1,59 @@
+.booked-date {
+    background-color: #d9534f !important;
+    color: white !important;
+    border-radius: 50%;
+}
+
+/* src/assets/Booking.css */
+
+/* Contenedor general */
+.accommodations-container {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+/* Título */
+.accommodations-container h2 {
+    color: #5f1c1c;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo del calendario */
+.fc {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del mes */
+.fc .fc-toolbar-title {
+    font-size: 1.5rem;
+    color: #5f1c1c;
+}
+
+/* Botones del calendario */
+.fc-button {
+    background-color: #5f1c1c;
+    border: none;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.fc-button:hover {
+    background-color: #7a2a2a;
+}
+
+/* Eventos */
+.fc-event {
+    background-color: #d4af37;
+    border: none;
+    color: #2c2c2c;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 2px 4px;
+    border-radius: 4px;
+}

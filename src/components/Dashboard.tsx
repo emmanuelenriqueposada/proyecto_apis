@@ -17,9 +17,10 @@ const Dashboard: React.FC = () => {
   return (
     <div className="dashboard-background">
       <nav className="navbar">
-        <span className="navbar-brand">Dashboard</span>
+        <span className="navbar-brand">Home Page</span>
         <div className="navbar-links">
-          <Link to="/accommodations">Get all accomodations</Link>
+          <Link to="/accommodations">Accomodations</Link>
+          <Link to="/bookings">Bookings</Link>
           <button onClick={handleLogout}>Sign Out</button>
         </div>
       </nav>
