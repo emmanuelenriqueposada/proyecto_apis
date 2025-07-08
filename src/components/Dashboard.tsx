@@ -1,6 +1,6 @@
 // src/components/Dashboard.tsx
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import '../assets/Dashboard.css';
 
 const Dashboard: React.FC = () => {
@@ -16,8 +16,16 @@ const Dashboard: React.FC = () => {
 
   return (
     <div className="dashboard-background">
+      <nav className="navbar">
+        <span className="navbar-brand">Dashboard</span>
+        <div className="navbar-links">
+          <Link to="/accommodations">Ver Alojamiento</Link>
+          <button onClick={handleLogout}>Cerrar Sesión</button>
+        </div>
+      </nav>
+
       <div className="dashboard-card">
-        <h1 className="dashboard-title">Bienvenido, {userEmail} </h1>
+        <h1 className="dashboard-title">Bienvenido, {userEmail}</h1>
         <p className="dashboard-subtitle">Tu token es:</p>
         <textarea
           value={token}
@@ -25,9 +33,6 @@ const Dashboard: React.FC = () => {
           rows={5}
           className="dashboard-token"
         />
-        <button className="logout-button" onClick={handleLogout}>
-          Cerrar Sesión
-        </button>
       </div>
     </div>
   );

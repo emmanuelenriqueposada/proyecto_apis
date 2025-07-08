@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import LoginForm from './components/LoginForm';
 import Dashboard from './components/Dashboard';
+import Accommodations from './components/Accommodations';
 import ProtectedRoute from './components/ProtectedRoute';
 import { useLogin } from './hooks/useLogin';
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<LoginForm onLogin={login} />} />
         <Route element={<ProtectedRoute />}>
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/accommodations" element={<Accommodations />} />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

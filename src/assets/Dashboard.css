@@ -1,60 +1,21 @@
-/* src/components/Dashboard.css */
-.dashboard-background {
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(135deg, #dbeafe, #f0fdf4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.dashboard-card {
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  width: 90%;
-  text-align: center;
-}
+/* src/assets/Dashboard.css */
 
 .dashboard-title {
-  font-size: 28px;
-  color: #1e3a8a;
-  margin-bottom: 16px;
+  color: #000; /* Negro */
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .dashboard-subtitle {
-  font-size: 18px;
-  color: #374151;
-  margin-bottom: 8px;
+  color: #000; /* Negro */
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .dashboard-token {
   width: 100%;
-  padding: 12px;
-  font-size: 14px;
-  border: 1px solid #cbd5e1;
-  border-radius: 6px;
-  resize: vertical;
-  margin-bottom: 20px;
-  background-color: #f9fafb;
-  color: #111827;
-}
-
-.logout-button {
-  padding: 12px 24px;
-  background-color: #ef4444;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.logout-button:hover {
-  background-color: #dc2626;
+  resize: none;
+  padding: 0.5rem;
+  font-family: monospace;
+  color: #000; /* Asegura que el texto del token también sea negro */
 }
